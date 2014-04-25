@@ -468,6 +468,7 @@ rc5_72_unit_func_avx2:
     bswap   L0mid
     adc     L0mid, 0
     bswap   L0mid
+    mov     eax, [work_pre_S1]
     jnc     .key_setup_1_mid_loop
 
     bswap   L0lo
